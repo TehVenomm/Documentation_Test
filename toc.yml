@@ -1,4 +1,2 @@
-- name: Manual
+- name: Home
   href: manual/
-- name: Scripting API
-  href: api/
