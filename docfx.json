@@ -1,32 +1,87 @@
 {
-  "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.{md,yml}"
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "..",
+                    "files": [
+                        "Assets/**/*.cs"
+                    ],
+                    "exclude": [
+                        "Assets/Plugins/**"
+                    ]
+                }
+            ],
+            "globalNamespaceId": "Global",
+            "filter": "filterConfig.yml",
+            "dest": "api"
+        }
+    ],
+    "build": {
+        "globalMetadata": {
+            "_appTitle": "Documentation",
+            "_appFooter": "Documentation",
+            "_enableSearch": true
+        },
+		"template": [
+		  "default",
+		  "modern",
+		  "custom-template-material"
+		],
+        "content": [
+            {
+                "files": [
+                    "toc.yml",
+                    "index.md"
+                ]
+            },
+            {
+                "src": "api",
+                "files": [
+                    "*.yml"
+                ],
+                "dest": "api"
+            },
+            {
+                "src": "manual",
+                "files": [
+                    "toc.yml",
+                    "*.md"
+                ],
+                "dest": "manual"
+            }
         ],
-        "exclude": [
-          "_site/**"
-        ]
-      }
-    ],
-    "resource": [
-      {
-        "files": [
-          "images/**"
-        ]
-      }
-    ],
-    "output": "_site",
-    "template": [
-      "default",
-      "modern"
-    ],
-    "globalMetadata": {
-      "_appName": "TestPage",
-      "_appTitle": "TestPage",
-      "_enableSearch": true,
-      "pdf": true
+        "overwrite": [
+            {
+                "src": "..",
+                "files": [
+                    "Assets/Scripts/**/*.md"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "resources/**/*"
+                ]
+            }
+        ],
+        "sitemap": {
+            "baseUrl": "https://TehVenomm.github.io/DocFxTest",
+            "changefreq": "weekly",
+            "fileOptions": {
+                "api/*": {
+                    "changefreq": "daily"
+                }
+            }
+        },
+        "xref": [
+            "https://TehVenomm.github.io/DocFxTestXrefMaps/xrefmap.yml"
+        ],
+        "xrefService": [
+            "https://xref.docs.microsoft.com/query?uid={uid}"
+        ],
+        "dest": "../_site",
+		"postProcessors": ["ExtractSearchIndex"],
     }
-  }
 }
