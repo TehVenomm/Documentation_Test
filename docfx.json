@@ -1,86 +1,46 @@
 {
-    "metadata": [
-        {
-            "src": [
-                {
-                    "src": "..",
-                    "files": [
-                        "Assets/**/*.cs"
-                    ],
-                    "exclude": [
-                        "Assets/Plugins/**"
-                    ]
-                }
-            ],
-            "globalNamespaceId": "Global",
-            "filter": "filterConfig.yml",
-            "dest": "api"
-        }
+  "build": {
+    "content": [
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md",
+          "api/**.md",
+          "api/**/toc.yml"
+        ]
+      }
     ],
-    "build": {
-        "globalMetadata": {
-            "_appTitle": "Documentation",
-            "_appFooter": "Documentation",
-            "_enableSearch": true
-        },
-		"template": [
-		  "default",
-		  "modern"
-		],
-        "content": [
-            {
-                "files": [
-                    "toc.yml",
-                    "index.md"
-                ]
-            },
-            {
-                "src": "api",
-                "files": [
-                    "*.yml"
-                ],
-                "dest": "api"
-            },
-            {
-                "src": "manual",
-                "files": [
-                    "toc.yml",
-                    "*.md"
-                ],
-                "dest": "manual"
-            }
-        ],
-        "overwrite": [
-            {
-                "src": "..",
-                "files": [
-                    "Assets/Scripts/**/*.md"
-                ]
-            }
-        ],
-        "resource": [
-            {
-                "files": [
-                    "resources/**/*"
-                ]
-            }
-        ],
-        "sitemap": {
-            "baseUrl": "https://TehVenomm.github.io/DocFxTest",
-            "changefreq": "weekly",
-            "fileOptions": {
-                "api/*": {
-                    "changefreq": "daily"
-                }
-            }
-        },
-        "xref": [
-            "https://TehVenomm.github.io/DocFxTestXrefMaps/xrefmap.yml"
-        ],
-        "xrefService": [
-            "https://xref.docs.microsoft.com/query?uid={uid}"
-        ],
-        "dest": "_site",
-		"postProcessors": ["ExtractSearchIndex"]
-    }
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "darkerfx"
+    ],
+    "postProcessors": [
+      "ExtractSearchIndex"
+    ],
+    "globalMetadata": {
+      "_appFooter": "<span>Copyright © Steffen Wilke & Per Lundberg<br>Generated with <strong>DocFX</strong></span>",
+      "_appTitle": "darkFX",
+      "_enableSearch": "true",
+      "_gitContribute": {
+        "repo": "https://github.com/perlun/darkerfx"
+      },
+      "_gitUrlPattern": "github"
+    },
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
 }
