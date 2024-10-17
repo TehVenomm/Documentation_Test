@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tehvenomm.github.io/DocFxTest/index.html</loc>
+    <lastmod>2024-10-17T08:18:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tehvenomm.github.io/DocFxTest/manual/coniunctis.html</loc>
+    <lastmod>2024-10-17T08:18:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://tehvenomm.github.io/DocFxTest/manual/etiam.html</loc>
+    <lastmod>2024-10-17T08:18:01+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>
