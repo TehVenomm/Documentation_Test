@@ -4,11 +4,9 @@
       {
         "files": [
           "articles/**.md",
-          "articles/**/toc.yml",
+          "articles/**.yml",
           "toc.yml",
-          "*.md",
-          "api/**.md",
-          "api/**/toc.yml"
+          "*.md"
         ]
       }
     ],
@@ -23,20 +21,15 @@
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
-      "default",
-      "darkerfx"
+      "_exported_templates/default"
     ],
     "postProcessors": [
       "ExtractSearchIndex"
     ],
     "globalMetadata": {
-      "_appFooter": "<span>Copyright © Steffen Wilke & Per Lundberg<br>Generated with <strong>DocFX</strong></span>",
-      "_appTitle": "darkFX",
-      "_enableSearch": "true",
-      "_gitContribute": {
-        "repo": "https://github.com/perlun/darkerfx"
-      },
-      "_gitUrlPattern": "github"
+      "_appFooter": "Testing page #3",
+      "_appTitle": "Search Bar Test",
+      "_enableSearch": "true"
     },
     "noLangKeyword": false,
     "keepFileLink": false,

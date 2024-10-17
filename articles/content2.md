@@ -1,6 +1,6 @@
-# Rigidum iuvenis referat iamque Maera habebat quid
+# Testing page for search indexing
 
-## Rotatis corpora aliquid regnum et sequerer
+## Seach bar should work now.
 
 Lorem markdownum in interea, in angues ausa facit **solita**. Tam clangore neque
 plangere tanta, fuit partem culpa iunctorum iuncta parientibus viret procubuisse

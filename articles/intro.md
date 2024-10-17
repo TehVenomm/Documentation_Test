@@ -1,6 +1,6 @@
-# Fallere antiquam thyrso visceribus
+# Testing page for content styling
 
-## Si mandate videt
+## Sample page
 
 > [!TIP]
 > This is a note which needs your attention, but it's not super important.

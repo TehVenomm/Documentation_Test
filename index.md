@@ -1,28 +1,11 @@
-# darkerfx - A dark theme for DocFX!
+---
+_layout: landing
+---
 
-A dark template for documentation generated with [DocFX](https://dotnet.github.io/docfx/).
+# This is the **HOMEPAGE**.
 
-The theme is created as an override of the default template, so both `default` and `darkerfx` needs to be enabled in `docfx.json`
+Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
 
-## Live Demo
-You can view a demo DocFX project with this template [HERE](https://perlun.github.io/darkerfx/).
+## Quick Start Notes:
 
-## Install
-
-1. Download the source or the zipped file from the [releases](https://github.com/perlun/darkerfx/releases).
-2. Create a `templates` folder in the root of your DocFX directory.
-3. Copy the `darkerfx` folder to the `templates` folder.
-4. Update the `docfx.json` configuration to include the `darkerfx` template:
-    ```json
-    {
-        "template": [
-            "default",
-            "templates/darkerfx"
-        ],
-    }
-    ```
-
-## Acknowledgement
-The theme is based on the great [darkFX](https://github.com/steffen-wilke/darkfx) theme by Steffen Wilke. Many thanks to you!
-
-darkFX in turn has the following acknowledgement: Many thanks to [Oscar Vásquez](https://github.com/ovasquez) from which I borrowed the example pages and repository structure of his [Material Theme for DocFX](https://github.com/ovasquez/docfx-material).
+1. Add images to the *images* folder if the file is referencing an image.
