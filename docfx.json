@@ -25,8 +25,7 @@
         },
 		"template": [
 		  "default",
-		  "modern",
-		  "custom-template-material"
+		  "modern"
 		],
         "content": [
             {
@@ -81,6 +80,7 @@
         "xrefService": [
             "https://xref.docs.microsoft.com/query?uid={uid}"
         ],
-        "dest": "_site"
+        "dest": "_site",
+		"postProcessors": ["ExtractSearchIndex"]
     }
 }
